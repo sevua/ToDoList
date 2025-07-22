@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #7A94D0, #A8B9C9 50%, #7A94D0 100%);
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    min-height: 694px;
+    max-height: auto;
+    background-color: #e4e4e4;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.mpTitle {
+    margin-top: 20px;
+    color: #1A2E4E;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8FAADC;
+    padding-bottom: 10px;
+}
+
+li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.taskText {
+    width: 100%;
+    min-height: 40px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    resize: none;
+    overflow: hidden; 
+    box-sizing: border-box;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+.taskText:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #7A94D0;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+
+.newTask {
+    color: #1A2E4E;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.newTask img {
+    width: 32px;       
+    height: 32px;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(13%) saturate(1093%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    transition: transform 0.1s;
+}
+
+.newTask img:hover {
+    transform: scale(1.02); 
+}
+.deleteTask {
+    width: 24px;
+    height: 24px;
+    background-image: url('pics/delete.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+}
